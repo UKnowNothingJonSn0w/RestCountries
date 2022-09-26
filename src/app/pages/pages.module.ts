@@ -7,16 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BsModalService, BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AfricaComponent } from './africa/africa.component';
-import { AmerykaComponent } from './ameryka/ameryka.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
-  declarations: [
-    PagesComponent,
-    HomeComponent,
-    AfricaComponent,
-    AmerykaComponent,
-  ],
+  declarations: [PagesComponent, HomeComponent, AfricaComponent],
 
   imports: [
     ModalModule.forRoot(),
