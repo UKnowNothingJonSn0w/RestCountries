@@ -1,13 +1,10 @@
-import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { RegionsComponent } from './regions/regions.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [{ path: '', redirectTo: '/home', pathMatch: 'full' }];
 
 @NgModule({
-  declarations: [RegionsComponent],
-  imports: [
-    RouterModule.forRoot([{ path: 'regions', component: RegionsComponent }]),
-  ],
+  imports: [],
   exports: [RouterModule],
-  providers: [],
 })
 export class AppRoutingModule {}
