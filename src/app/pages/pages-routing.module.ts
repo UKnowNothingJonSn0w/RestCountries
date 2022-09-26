@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AfricaComponent } from './africa/africa.component';
 import { AmericaComponent } from './america/america.component';
 import { AsiaComponent } from './asia/asia.component';
-import { AfricaDetailsComponent } from './africa/africa-details.component';
+import { AfricaDetailsComponent } from './africa/africa-details/africa-details.component';
 
 const routes: Routes = [
   {

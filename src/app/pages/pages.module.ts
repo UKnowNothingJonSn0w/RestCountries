@@ -10,7 +10,7 @@ import { AfricaComponent } from './africa/africa.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AmericaComponent } from './america/america.component';
 import { AsiaComponent } from './asia/asia.component';
-import { AfricaDetailsComponent } from '../africa/africa-details.component';
+import { AfricaDetailsComponent } from './africa/africa-details/africa-details.component';
 
 @NgModule({
   declarations: [
