@@ -1,6 +1,12 @@
 <p>africa works!</p>
-<div class="body">
-  <div class="col-8 table-div">
-    <ngx-datatable class="material"> </ngx-datatable>
-  </div>
+<div class="table">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let region of regions">
+        <td>
+          {{ region.name }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

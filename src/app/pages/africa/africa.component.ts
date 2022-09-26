@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DatatableComponent } from '@swimlane/ngx-datatable';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-africa',
@@ -7,19 +7,20 @@ import { DatatableComponent } from '@swimlane/ngx-datatable';
   styleUrls: ['./africa.component.css'],
 })
 export class AfricaComponent implements OnInit {
-  @ViewChild(DatatableComponent) table: DatatableComponent;
-  public africa = [];
-  public loading = true;
+  public regions = [];
+  public isLoading = true;
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loadAfrica();
   }
   loadAfrica() {
-    //this.ShipsService.Ships().subscribe((response) => {
-    // console.log(response);
-    // this.ships = response;
-    // });
+    this.http
+      .get<any>('https://restcountries.com/v2/region/africa')
+      .subscribe((response) => {
+        // console.log(response);
+        this.regions = response;
+      });
   }
 }
